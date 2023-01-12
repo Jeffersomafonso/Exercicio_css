@@ -1,0 +1,144 @@
+body > header{
+    background-color: #2f3640;
+    padding:16px; /*preenchimento */
+    color: aliceblue;/*cor da letra*/
+}
+h1{
+    color: rgb(55, 236, 23);
+}
+h2{
+    color: rgb(6, 66, 36);
+}
+#economia h2{
+    color: rgb(255, 0, 51);
+}
+
+*{
+    box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+header li{ /* LINK MENU*/
+    margin-left: 16px;/*dar um espaço entre as paravras*/
+    font-weight: bold;/*fonte tem um peso maior*/
+    font-family: Arial, Helvetica, sans-serif;/*fonte*/
+    display:inline;
+}
+header li a{/* Estilizar link dentro li*/
+    color: aliceblue;
+ text-decoration: none;/*tira o _*/
+ }
+ .container {/*no html <div class="container">*/
+    width: 1366px; /*Largura*/
+    margin:0 auto ; /*centralizado na horizontal , 
+    topo, baixo 0    laterais auto*/
+}
+.articles{/* no html <div class="articles">*/
+    display:flex;
+    flex-wrap: wrap;/*cria mais linhas para ajustar pagina quando é 
+    acrescentado mais coisa que não cabe na pagina*/
+    justify-content: space-between;/*divide os espaços livres de forma
+     igualitaria*/
+}
+.articles article img{/*entrar com articles selecionar o artigo e imagem 
+    p/ trabalhar o tamanho da imadem*/
+   /* height: 180px; /* estou limitando a altura da imagem*/
+   width: 100%;/* Limitar pela largura, dizer que ela pode ter 100% do tamanho do
+   article*/
+}
+.articles article {/*trabalhando com o artigo, largura*/
+    width: 30%; /* largura em porcentagem */
+}
+
+header .container{/*menu topo pagina*/
+    display: flex;
+    align-items: center;/*joga link para o centro*/
+    justify-content: space-between;/*joga link para o canto*/
+}/* display estou mandando o titulo ficar ao lado do menu
+<div class="container"> precisa disso na header*/
+
+section {
+    padding: 16px 0;
+}/*espaçamento da borda do titulo h1, ele desce um pouco a pagina*/
+
+
+/* Aqui inicia margem*/
+section h2,
+.articles article {/*esse comando aplica margen inferior
+    figura de baixo*/
+    margin-bottom: 16px;
+}/*espaçamento na margem superior da imagem no titulo h2*/
+
+.articles articl h3{/*aplica margen no titulo h3 da noticia*/
+    margin-top: 16px;/*margem superior*/
+    margin-bottom: 16px;/*margem inferior*/
+    color: rgb(99, 180, 17);
+}
+.articles article a{ /* A de link, Dar ao link cara de botão*/
+    background-color: rgb(44, 15, 232);
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block;/*dá uma descida no botão*/
+    text-decoration: none;/*Tira o _ do botão*/
+    font-weight: bold; /*borda negrito*/
+    margin-top: 8px; /*margem no botão desce ele*/
+    }
+
+
+.articles article a:hover{/* Ao passar o mouse em cima do botão
+    aparece o _*/
+    text-decoration: underline;
+
+}
+
+.articles article p,/*P de paragrafo*/
+.articles article a{/*A de botão link*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article p,/*P de paragrafo*/
+.articles article a{/*A de botão link*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3{/*Texto com tamanho h3*/
+    font-size: 24px;
+}
+
+section h2{/*Texto com tamanho h2*/
+    font-size: 32px;
+}
+
+#sports {/*Isso altera a cor de fundo da seção de Esportes*/
+    background-color: rgba(0, 255, 0, 0.1);
+}
+
+#sports .articles article a {/*Isso altera a cor dos botões*/
+    background-color: rgba(0, 255, 0, 0.8);
+    color: #000;
+}
+
+#economy {/*Isso altera a cor de fundo da seção de Economia*/
+    background-color: #fffa658b;
+}
+#economy .articles article a {/*Isso altera a cor dos botões*/
+    background-color: #ffa01ad7
+    }
+
+#Entretenimento {
+    background-color: rgba(220, 30, 30, 0.206);
+}
+#Entretenimento .articles article a {
+    background-color:rgba(220, 30, 30, 0.64) ;
+}
+#Tecnologia {
+    background-color: rgba(17, 21, 233, 0.123);
+}
+#Tecnologia .articles article a {
+    background-color:rgba(30, 30, 220, 0.77) ;
+}
+
+
+
+
+
